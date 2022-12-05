@@ -1,35 +1,58 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Kalkulus</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-</head>
-<body>
-<header id="home" class="header">
-    <div class="overlay"></div>
-    <div class="header-content container">
-        <h1 class="text-4xl font-bold">
-            <span class="up">HI!</span> <br />
-            <span class="text-black text-5xl">I'm Dystian En Yusgiantoro (411221165)</span>
-        </h1>
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <section class="flex flex-col justify-center items-center h-full">
+      <div class="flex flex-row gap-4 bg-slate-100 p-4 rounded-lg">
+        <div class="flex flex-col">
+          <span>Nama</span>
+          <span>NIM</span>
+          <span>Prodi</span>
+        </div>
+        <div class="flex flex-col">
+          <span>: Dystian En Yusgiantoro</span>
+          <span>: 411221165</span>
+          <span>: Teknik Informatika</span>
+        </div>
+      </div>
 
-        <button class="bg-red-500">Hitung Persamaan Kuadrat</button>
-    </div>
-    <div class="bg-red-500 h-10">
+      <div class="flex flex-col flex-wrap gap-4 bg-white p-5 mt-5 mx-5 max-w-md shadow rounded-lg">
+        <h1 class="text-[22px] font-bold text-[#8A2BE2]">Menghitung Persamaan Kuadrat</h1>
+        <hr />
+        <div class="flex flex-col items-center bg-orange-200 rounded-lg text-center font-bold py-3">
+          <h1>Rumus Persamaan Kuadrat</h1>
+          <img src="assets/images/rumus.png" width="130" height="50">
+        </div>
+        <div class="column">
+          <h4 class="font-semibold">Nilai a</h4>
+          <input id="nilaiA" type="number" value="0" />
+        </div>
+        <div class="column">
+          <h4 class="font-semibold">Nilai b</h4>
+          <input id="nilaiB" type="number" value="0" />
+        </div>
+        <div class="column">
+          <h4 class="font-semibold">Nilai c</h4>
+          <input id="nilaiC" type="number" value="0" />
+        </div>
+        <div class="flex flex-row gap-4 justify-end">
+          <button class="button-reset" onclick="onReset()">Reset</button>
+          <button class="button-submit" onclick="onSubmit()">Submit</button>
+        </div>
 
-    </div>
-</header>
+        <div id="result-error" class="bg-red-300 rounded-lg font-bold p-3 hidden">Akar Tidak real/imajiner</div>
 
-<section id="hitung">
-    <div class="bg-"></div>
-</section>
+        <div id="result-success" class="bg-green-300 rounded-lg font-bold p-3 hidden">Hasil Persamaan Kudrat dari nilai-nilai yang anda masukan yaitu x<sub>1</sub> = <span id="x1">0</span> dan x<sub>2</sub> = <span id="x2">0</span></div>
+      </div>
+    </section>
 
-<script src="assets/js/index.js"></script>
-
-</body>
+    <script src="assets/js/index.js"></script>
+  </body>
 </html>

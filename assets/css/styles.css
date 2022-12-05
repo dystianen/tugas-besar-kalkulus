@@ -1,89 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 body {
-    margin: 0;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #212529;
-    text-align: left;
-    background-color: #fff;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  height: 100vh;
+  background: url(../images/header.jpg);
+  background-size: cover;
 }
 
-.header {
-    position: relative;
-    height: 100vh;
-    min-height: 600px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-image: url(../images/header.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center center;
+input {
+  padding: 5px 0 5px 10px !important;
+  border: 1px solid lightgray !important;
+  border-radius: 5px !important;
 }
 
-.header .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: -webkit-linear-gradient(bottom, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
-    background-image: linear-gradient(to top, #fff 0%, rgba(105, 90, 166, 0.35) 99%, rgba(105, 90, 166, 0.5) 100%);
+input:focus {
+  outline: none;
+  border: 1px solid blueviolet !important;
 }
 
-.header .header-content {
-    margin-top: 20px;
-    -webkit-box-flex: 1;
-    -webkit-flex-grow: 1;
-    -ms-flex-positive: 1;
-    flex-grow: 1;
-    max-width: 550px;
+.button-visit {
+  margin-top: 5px;
+  margin-left: 14rem;
+  padding: 5px 20px;
+  color: #ffffff;
+  background-color: blueviolet;
+  border-radius: 5px;
 }
 
-/*.header .header-content .header-title .up {*/
-/*    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1300 - 300)));*/
-/*    font-weight: 500;*/
-/*    color: #444;*/
-/*    margin-bottom: 5px;*/
-/*    position: relative;*/
-/*    display: block;*/
-/*}*/
+.button-visit:hover {
+  background-color: rgb(152, 72, 226);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 
-/*.header .header-content .header-title .down {*/
-/*    font-size: 50px;*/
-/*    margin-bottom: 0;*/
-/*    position: relative;*/
-/*    display: block;*/
-/*}*/
+.button-back {
+  padding: 5px 10px;
+  color: #000000;
+  background-color: lightgray;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
 
-/*.header .header-content .header-subtitle {*/
-/*    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));*/
-/*    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));*/
-/*    opacity: .8;*/
-/*    margin-top: -10px;*/
-/*    margin-bottom: 20px;*/
-/*}*/
+.button-reset {
+  padding: 5px 10px;
+  color: red;
+  border: 1px solid red;
+  border-radius: 5px;
+}
 
-/*.header .header-content .btn {*/
-/*    position: relative;*/
-/*    margin-top: 20px;*/
-/*    border-radius: 20px;*/
-/*    padding: 8px 15px;*/
-/*}*/
+.button-reset:hover {
+  color: #ffffff;
+  background-color: rgb(250, 27, 27);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
 
-/*.header-title {*/
-/*    font-size: 2.4rem;*/
-/*    font-weight: bold;*/
-/*    opacity: .8;*/
-/*    color: #212529;*/
-/*}*/
+.button-submit {
+  padding: 5px 10px;
+  color: #ffffff;
+  background-color: blueviolet;
+  border-radius: 5px;
+}
+
+.button-submit:hover {
+  background-color: rgb(152, 72, 226);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
