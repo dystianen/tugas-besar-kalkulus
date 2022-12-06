@@ -12,13 +12,15 @@ body {
 
 input {
   padding: 5px 0 5px 10px !important;
+  background-color: #B09B71;
+  color: #fff !important;
   border: 1px solid lightgray !important;
   border-radius: 5px !important;
 }
 
 input:focus {
   outline: none;
-  border: 1px solid blueviolet !important;
+  border: 1px solid #ffffff !important;
 }
 
 .button-visit {
@@ -45,26 +47,27 @@ input:focus {
 
 .button-reset {
   padding: 5px 10px;
-  color: red;
-  border: 1px solid red;
+  color: #ffffff;
+  background-color: rgb(250, 27, 27);
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   border-radius: 5px;
 }
 
 .button-reset:hover {
   color: #ffffff;
-  background-color: rgb(250, 27, 27);
+  background-color: rgb(253, 60, 60);
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
 .button-submit {
   padding: 5px 10px;
-  color: #ffffff;
-  background-color: blueviolet;
+  color: #000000;
+  background-color: #EDDFB3;
   border-radius: 5px;
 }
 
 .button-submit:hover {
-  background-color: rgb(152, 72, 226);
+  background-color: #D8CCA3;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
 }
 
@@ -73,4 +76,17 @@ input:focus {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+#result-error {
+  animation-name: result-error;
+  transition-timing-function: ease-in;
+  animation-duration: 2s;
+  animation-delay: 2s;
+}
+
+#result-success {
+  animation: ease-in-out;
+  animation-duration: 2s;
+  animation-delay: 2s;
 }
