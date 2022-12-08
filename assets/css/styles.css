@@ -1,13 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 body {
-  margin: 0;
-  padding: 0;
+  margin: 10px;
   font-family: 'Poppins', sans-serif;
   background-color: #fff;
   height: 100vh;
   background: url(../images/header.jpg);
   background-size: cover;
+}
+
+.column {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 input {
@@ -69,13 +76,6 @@ input:focus {
 .button-submit:hover {
   background-color: #D8CCA3;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-
-.column {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #result-error {
