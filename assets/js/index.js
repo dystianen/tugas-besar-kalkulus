@@ -21,6 +21,7 @@ function onSubmit() {
     resultError.style.display = 'none';
   } else {
     resultError.style.display = 'block';
+    resultSuccess.style.display = 'none';
   }
 }
 
