@@ -35,7 +35,6 @@ function onSubmit() {
     document.getElementById('x1').innerHTML = x1.toFixed(2);
     document.getElementById('x2').innerHTML = x2.toFixed(2);
     resultSuccess.style.display = 'block';
-    resultError.style.display = 'none';
   } else {
     resultSuccess.style.display = 'block';
     let x_second = (-1 * B) / denominator;
